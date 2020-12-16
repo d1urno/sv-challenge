@@ -164,6 +164,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'OpenSans',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
