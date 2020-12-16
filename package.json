@@ -11,7 +11,12 @@
     "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
   },
   "dependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
+    "postcss": "^7.0.35",
+    "postcss-focus-visible": "^5.0.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
