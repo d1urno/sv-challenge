@@ -6,6 +6,17 @@
         class="fixed inset-0 z-10 mt-20 w-72"
       />
     </transition>
+
+    <!-- Invisible Backdrop -->
+    <button
+      v-if="isOpen"
+      type="button"
+      class="fixed inset-0 w-full cursor-default focus:outline-none"
+      tabindex="-1"
+      @mousedown="isOpen = false"
+    />
+    <!-- End: Invisible Backdrop -->
+
     <app-nav-bar class="sticky top-0 h-20" :is-open="isOpen" @toggle="isOpen = !isOpen"/>
     <buttons-view class="container px-6 pt-20 lg:px-44"/>
   </div>
