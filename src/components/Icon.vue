@@ -11,7 +11,7 @@
 <script>
 export default {
   name: 'Icon',
-  components: {},
+  components: { camera: () => import('@/assets/icons/camera.vue') },
   props: {
     type: {
       type: String,
