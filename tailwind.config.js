@@ -8,9 +8,8 @@ module.exports = {
     screens: {
       sm: '640px',
       md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-      '2xl': '1536px',
+      lg: '992px',
+      xl: '1200px',
     },
     colors: {
       transparent: 'transparent',
@@ -133,7 +132,9 @@ module.exports = {
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       none: 'none',
     },
-    container: {},
+    container: {
+      center: true,
+    },
     cursor: {
       auto: 'auto',
       default: 'default',
