@@ -1,12 +1,16 @@
 <template>
   <button role="button" :class="getClasses" :aria-labelledby="label" :disabled="disabled">
-    {{ label }}
+    <icon v-if="icon" class="h-full text-white" :type="icon"/>
+    <template v-else>{{ label }}</template>
   </button>
 </template>
 
 <script>
+import Icon from '@/components/Icon.vue';
+
 export default {
   name: 'VButton',
+  components: { Icon },
   props: {
     label: {
       type: String,
@@ -21,6 +25,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    icon: {
+      type: String,
+      default: null,
+    },
   },
   computed: {
     getClasses() {
@@ -30,8 +38,11 @@ export default {
         primary: `${baseClasses} bg-yellow-300 hover:bg-yellow-200 active:bg-yellow-400`,
         secondary: `${baseClasses} bg-gray-600 text-gray-400 hover:bg-gray-400 hover:text-white`,
         disabled: `${baseClasses} bg-gray-700 text-gray-600 border-2 border-gray-600`,
+        icon: 'overflow-hidden mx-auto w-12 h-12 rounded-full transition-colors hover:bg-gray-700',
       };
-      return classes[this.disabled ? 'disabled' : this.theme];
+      if (this.icon) return classes.icon;
+      if (this.disabled) return classes.disabled;
+      return classes[this.theme];
     },
   },
 };

@@ -41,15 +41,11 @@
         <div class="flex space-x-5">
           <div>
             <p class="mb-8 font-bold text-center text-gray-500">On</p>
-            <button class="overflow-hidden mx-auto w-12 h-12 rounded-full">
-              <icon type="camera" class="h-full text-white"/>
-            </button>
+            <v-button label="Camera" icon="camera"/>
           </div>
           <div>
             <p class="mb-8 font-bold text-center text-gray-500">Hover</p>
-            <button class="overflow-hidden mx-auto w-12 h-12 bg-gray-700 rounded-full">
-              <icon type="camera" class="h-full text-white"/>
-            </button>
+            <v-button label="Camera" icon="camera" class="bg-gray-700"/>
           </div>
         </div>
       </div>
@@ -60,12 +56,10 @@
 
 <script>
 import VButton from '@/components/VButton.vue';
-import Icon from '@/components/Icon.vue';
 
 export default {
   name: 'ButtonsView',
   components: {
-    Icon,
     VButton,
   },
 };
