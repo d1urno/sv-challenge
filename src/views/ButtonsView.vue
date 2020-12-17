@@ -15,18 +15,18 @@
 
       <p class="my-auto font-bold text-gray-400">Primary action</p>
       <v-button label="Label"/>
-      <v-button label="Label"/>
-      <v-button label="Label"/>
+      <v-button label="Label" theme="custom" class="bg-yellow-200"/>
+      <v-button label="Label" theme="custom" class="bg-yellow-400"/>
 
       <p class="my-auto font-bold text-gray-400">Secondary action</p>
-      <v-button label="Secondary"/>
-      <v-button label="Secondary"/>
-      <v-button label="Secondary"/>
+      <v-button label="Secondary" theme="secondary"/>
+      <v-button label="Secondary" theme="custom" class="text-white bg-gray-400"/>
+      <v-button label="Secondary" theme="secondary"/>
 
       <p class="my-auto font-bold text-gray-400">Disabled</p>
-      <v-button label="Disabled"/>
-      <v-button label="Disabled"/>
-      <v-button label="Disabled"/>
+      <v-button label="Disabled" disabled/>
+      <v-button label="Disabled" disabled/>
+      <v-button label="Disabled" disabled/>
 
     </div>
     <!-- End: Main buttons section -->
