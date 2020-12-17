@@ -4,18 +4,23 @@
     role="presentation"
     :aria-labelledby="type"
   >
-    <component :is="type"/>
+    <component :is="getComponent"/>
   </i>
 </template>
 
 <script>
 export default {
   name: 'Icon',
-  components: { camera: () => import('@/assets/icons/camera.vue') },
   props: {
     type: {
       type: String,
       required: true,
+    },
+  },
+  computed: {
+    getComponent() {
+      // https://github.com/babel/babel-eslint/issues/681#issuecomment-652141552
+      return () => import('@/assets/icons/' + this.type + '.vue'); // eslint-disable-line
     },
   },
 };
