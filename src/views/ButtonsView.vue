@@ -5,7 +5,7 @@
 
     <!-- Main buttons section -->
     <p class="mb-2 font-bold text-white uppercase">Main buttons</p>
-    <hr class="mb-10 text-gray-400">
+    <hr class="mb-10 border-gray-500">
     <div class="grid grid-cols-4 gap-x-2 gap-y-6 mb-20 max-w-3xl uppercase sm:gap-9">
 
       <p class="font-bold text-white">Dark Mode</p>
@@ -20,7 +20,7 @@
 
       <p class="my-auto font-bold text-gray-400">Secondary action</p>
       <v-button label="Secondary" theme="secondary"/>
-      <v-button label="Secondary" theme="custom" class="text-white bg-gray-400"/>
+      <v-button label="Secondary" theme="custom" class="text-gray-100 bg-gray-400"/>
       <v-button label="Secondary" theme="secondary"/>
 
       <p class="my-auto font-bold text-gray-400">Disabled</p>
@@ -33,7 +33,7 @@
 
     <!-- Icon buttons section -->
     <p class="mb-2 font-bold text-white uppercase">Icon buttons</p>
-    <hr class="mb-6 text-gray-400">
+    <hr class="mb-6 border-gray-500">
 
     <div class="flex mb-28 space-x-10">
       <p class="pb-3 mt-auto mb-1 font-bold text-gray-400 uppercase">Secondary icon</p>

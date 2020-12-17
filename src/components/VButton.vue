@@ -36,7 +36,7 @@ export default {
       const classes = {
         custom: `${baseClasses}`,
         primary: `${baseClasses} bg-yellow-300 hover:bg-yellow-200 active:bg-yellow-400`,
-        secondary: `${baseClasses} bg-gray-600 text-gray-400 hover:bg-gray-400 hover:text-white`,
+        secondary: `${baseClasses} bg-gray-600 text-gray-400 hover:bg-gray-400 hover:text-gray-100`,
         disabled: `${baseClasses} bg-gray-700 text-gray-600 border-2 border-gray-600`,
         icon: 'overflow-hidden mx-auto w-12 h-12 rounded-full transition-colors hover:bg-gray-700',
       };
