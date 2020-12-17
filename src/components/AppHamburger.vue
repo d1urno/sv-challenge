@@ -2,7 +2,8 @@
   <!-- Hamburger -->
   <button
     id="hamburger"
-    class="px-6 py-4 -mr-1 -ml-4 hamburger hamburger--slider"
+    class="px-6 py-4 -mr-1 -ml-4 ring-white focus-visible:ring focus:outline-none rounded-sm
+    hamburger hamburger--slider"
     type="button"
     aria-label="Menu"
     aria-controls="navigation"

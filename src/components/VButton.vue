@@ -1,5 +1,6 @@
 <template>
-  <button role="button" :class="getClasses" :aria-labelledby="label" :disabled="disabled">
+  <button role="button" :class="getClasses" :aria-labelledby="label" :disabled="disabled"
+          class="ring-white focus-visible:ring focus:outline-none">
     <icon v-if="icon" class="h-full text-white" :type="icon"/>
     <template v-else>{{ label }}</template>
   </button>
