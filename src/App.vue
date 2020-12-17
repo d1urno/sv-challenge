@@ -52,4 +52,20 @@ export default {
 .slide-right-leave-active {
   @apply transition duration-300 ease-out;
 }
+
+/*****************************************
+  Remove highlight blue color on buttons
+  when tapped, only for mobile devices
+*****************************************/
+@layer base {
+  button {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
 </style>
